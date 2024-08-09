@@ -2855,7 +2855,7 @@ void netcode_client_receive_packets( struct netcode_client_t * client )
 
         while ( 1 )
         {
-            struct netcode_address_t from;
+            struct netcode_address_t from = {};
             uint8_t packet_data[NETCODE_MAX_PACKET_BYTES];
             int packet_bytes = 0;
 
@@ -4698,7 +4698,7 @@ void netcode_server_receive_packets( struct netcode_server_t * server )
 
         while ( 1 )
         {
-            struct netcode_address_t from;
+            struct netcode_address_t from = {};
             
             uint8_t packet_data[NETCODE_MAX_PACKET_BYTES];
             
